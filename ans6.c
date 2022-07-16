@@ -1,0 +1,24 @@
+// Write a program to print greater between two numbers. Print one number of both are the same.
+#include <stdio.h>
+int main()
+{
+    int a, b;
+    printf("Enter the first number:");
+    scanf("%d", &a);
+    printf("Enter the second number:");
+    scanf("%d", &b);
+    if (a != b)
+    {
+        if (a > b)
+        {
+            printf("%d is greater than %d", a, b);
+        }
+        else
+            printf("%d is greater than %d", b, a);
+    }
+    else
+    {
+        printf("%d and %d both are same", a, b);
+    }
+    return 0;
+}
